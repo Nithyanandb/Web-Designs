@@ -9,23 +9,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="/style.css">
+    <script>
+      function openInNewTab() {
+          window.open("Tab - 1.html", "_blank");
+      }
+  </script>
 </head>
 <body>
   <header>
     <h1>Booking Holdings</h1>
   </header>
   <div class="buttons">
-    <button class="button"><i class='fas'>&#xf236;</i>Stays</button>
-    <button class="button"><i class='fas fa-plane'></i>Flights</button>
-    <button class="button"><i class='fas'>&#xf594;</i>Hotel</button>
-    <button class="button"><i class='fas'>&#xf1b9;</i>Car Rentals</button>
-    <button class="button"><i class='fas fa-map-marked-alt'></i>Attractions</button>
-    <button class="button"><i class='fas'>&#xf218;</i>Shopping</button>
+    <button class="button"><i class='fas'>&#xf236;</i>PLACES TO STAY</button>
+    <button class="button"><i class='fas fa-plane'></i>DESTINATIONS</button>
+    <button class="button"><i class='fas'>&#xf594;</i>HOTEL</button>
+    <button class="button"><i class='fas'>&#xf1b9;</i>CAR RENTALS</button>
+    <button class="button"><i class='fas fa-map-marked-alt'></i>NEWS AND ADVICE</button>
+    <button class="button"><i class='fas'>&#xf218;</i>SHOPPING</button>
   </div>
   <section class="banner">
     <div class="banner-content">
       <p>Discover your perfect stay, book flights, find hotel deals, rent cars, explore attractions, and more!</p>
-      <button class="button_explore"><i class='fas'>	&#xf14e;</i>Explore</button>
+      <button class="button_explore" onclick="openInNewTab()"><i class='fas'>	&#xf14e;</i>EXPLORE</button>
     </div>
   </section>
   <section class="content">
@@ -36,9 +41,29 @@
         These are bodies of water located at altitudes of 10,000 feet or more above sea level—and many require traveling to the world’s most remote destinations like the Himalayas and the Andes Mountains to see them.
          What these high-altitude lakes lack in ease of accessibility, though, they make up for in crystal-clear waters—cooler temperatures mean less phytoplankton and algae—and end-of-the-earth scenery around them, 
          like jagged mountain peaks, volcanic craters, and desolate moonscapes.</p> 
-         <img src="Unsplash.jpg" alt="Description">
+         <img src="Alpine Lake - 2.jpg" alt="Description">
+         <p>BY SIOBHAN REID</p>
+         <p>June 16, 2023</p>
     </div>
   </section>  
-
+<section class="Destination">
+  <div class="Destination_guide">
+    <img src="Bangkok_The Siam. Cafe Cha 8.webp" alt="Description">
+    <button class="button_gui">Bangkok Travel Guide</button>
+    <p>When in doubt, get a tuk-tuk</p>
+    <img src="London.webp" alt="Description">
+    <button class="button_gui">London Travel Guide</button>
+    <p>Where the pubs are as old as the monuments</p>
+    <img src="Mexico-City.webp" alt="Description">
+    <button class="button_gui">Mexico City Travel Guide</button>
+    <p>How to do it right</p>
+    <img src="Chicago.webp" alt="Description">
+    <button class="button_gui">Chicago Travel Guide</button>
+    <p>Second City? Not by our count</p>
+    <img src="las-vegas_High-Roller-Observation-wheel.webp" alt="Description">
+    <button class="button_gui">Las Vegas Travel Guide</button>
+    <p>Leave your watch at home</p>
+  </div>
+</section>
  </body>
 </html>
