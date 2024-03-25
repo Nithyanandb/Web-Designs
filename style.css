@@ -1,79 +1,19 @@
 header {
   display: flex;
-  justify-content: left;
-  font-family: "Madimi One", sans-serif;
+  justify-content: space-around;
+  font-family: "poppins", sans-serif;
   font-size: 15px;
   font-weight: lighter;
   color: rgb(0, 0, 0);
-  padding-top: 1.5%;
-  padding-bottom: .5%;
-  margin-left: 73px;
+  padding: 0%;
+  margin: 0;
   background-color: rgba(255, 255, 255, 0.8); 
-  justify-content: space-between;
-}
-.header-content {
-  display: flex;
-  justify-content: right;
-margin-right: 6%;
-}
-.Arena{
-  margin-top:25%;
-}
-.line-des{
-  width: 100%;
-  margin: 0 auto;
-  border-top: 0.5px solid #d7d7d7;
-  margin-bottom: 10px;
-  margin-top: 40px;
-}
-.search-signin {
-  display: flex;
-  align-items: center;
 }
 
-.search-bar {
-  position: relative;
-  padding-right: 40px;
-}
-
-.search-bar input[type="text"] {
-  padding: 8px;
-  border-radius: 25px;
-  border: 1px solid #aeaeae;
-  outline: none;
-}
-
-.search-bar button {
-  position: absolute;
-  right: 50px;
-  top: 50%;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-.places{
-  font-family: "exo";
-}
-.signin .signin-button {
-  background-color: #7f7f7f;
-  color: #ffffff;
-  padding: 8px 20px;
-  font-family:"rubik", serif;
-  font-style: normal;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-}
-.signin-button:hover{
-  background-color: #444444;
-  color: #fcf2f2;
-}
 .buttons {
   display: flex;
-  justify-content: left;
-  padding: 1% 0%;
-  margin-left: 51px;
+  justify-content: center;
+  padding: 0%;
   border: 0%;
 }
 
@@ -81,9 +21,9 @@ margin-right: 6%;
   background: fixed;
   font-family: 'Rubik', sans-serif;
   font-size: 14px; 
-  color: rgb(50, 50, 50);
+  color: rgb(0, 0, 0);
   border: 0;
-  padding: 10px 25px;
+  padding: 10px 20px;
   cursor: pointer;
   margin-top: 6px;
   position: relative;
@@ -97,8 +37,12 @@ margin-right: 6%;
   width: 0;
   height: 1px;
   background-color: rgb(0, 0, 0);
-  color: #232323;
+  transition: width 0.3s ease-in; 
 }
+
+.button:hover::after {
+  width: 100%; 
+} 
 
 .button i {
   margin-right: 8px;
@@ -112,30 +56,17 @@ body, html {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   padding: 20px;
-  flex: 1;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-top : 30px;
 }
 .grid-container h2{
   line-height: 1.5;
-  display: flex;
   font-family: 'Rubik', sans-serif;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.grid-container p{
-  line-height: 1.5;
-  display: flex;
-  font-family: 'Rubik', sans-serif;
-  align-items: center;
-  justify-content: center;
 }
 .grid-item {
   background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
 }
 
@@ -155,13 +86,12 @@ body, html {
   margin-bottom: 10px;
 }
 
-
 .content {
   display: flex;
   justify-content: space-between;
-  margin-top: 15px;
-  padding: 0 60px; /* Added padding to align with the left margin */
+  margin-top: 30px;
 }
+
 .side-content {
   flex-basis: 25%;
 }
@@ -180,7 +110,7 @@ body, html {
 .h1{
   font-family: "Exo", sans-serif;
   font-size: 7px;
-  margin-left: 9px;
+  margin-left: 13px;
   padding-top: 10px;
   color: #515151;
 }
@@ -191,9 +121,9 @@ body, html {
   margin-bottom: 10px;
 }
 .featured-list p {
-font-family: "rubik", sans-serif;
-font-size: 14px;
-line-height: 2;
+font-family: "Exo", sans-serif;
+font-size: 13px;
+line-height: 1.5;
 }
 .featured-list h2 {
 font-family: "Exo", sans-serif;;
@@ -229,7 +159,7 @@ font-family: "Exo", sans-serif;;
   background-color: #ffffff;
   border: none;
   color: #000000;
-  padding: 10px 0px;
+  padding: 10px 20px;
   margin-top: 30px;
   cursor: pointer;
   font-family: 'Rubik', sans-serif;
@@ -240,12 +170,12 @@ font-family: "Exo", sans-serif;;
 .button_gui::after {
   content: '';
   position: absolute;
-  bottom: -4px;
+  bottom: -10px;
   left: 0;
   width: 0;
-  height: 0.2px;
-  background-color: #808080; 
-  
+  height: 1px;
+  background-color: #ffffff; 
+  transition: width 0.3s ease-in-out;
 }
 
 .button_gui:hover::after {
@@ -263,86 +193,27 @@ font-family: "Exo", sans-serif;;
   font-size: 30px;
   position: relative;  
 }
-.line-above1 {
-  width: 90%;
-  margin: 0 auto;
-  border-top: 0.5px solid #d7d7d7;
-  margin-bottom: 3px;
-  margin-top: 5px;
-}
-.lineside{
-  width: 1px;
-  height: auto;
-  margin: 0 auto;
-  border-left: 0.5px solid #ff0000;
-  display: flex;
-  flex-direction: column;
-}
 
-.line-below1 {
-  width: 90%;
-  margin: 0% auto;
-  border-top: 0.5px solid  #d7d7d7;
-  margin-top: 3px;
-}
 .line-above {
-  width: 92%;
+  width: 93.5%;
   margin: 0 auto;
-  border-top: 0.5px solid #d7d7d7;
+  border-top: 0.5px solid #000000;
   margin-bottom: 3px;
-  margin-top: 13%;
 }
 
 .line-below {
-  width: 92%;
+  width: 93.5%;
   margin: 0% auto;
-  border-top: 0.5px solid #d7d7d7;
-  margin-top: 1px;
+  border-top: 0.5px solid #000000;
+  margin-top: 3px;
 }
-.line2-above {
-  width: 92%;
-  margin: 0 auto;
-  border-top: 0.5px solid #d7d7d7;
-  margin-top: 10px;
-}
-.line2-below {
-  width: 92%;
-  margin: 0% auto;
-  border-top: 0.5px solid  #d7d7d7;
-}
-
-.line {
-  width: 92%;
-  border-top: 0.5px solid #d7d7d7;
-  margin-left: 10px;
-}
-.main-content {
-  position: absolute;
-  top: 50; 
-  right: 10; 
-  width: 63%; 
-  padding: 20px;
+.Arena {
   background-color: #ffffff;
-  line-height: 2;
+  margin-top: 60px;
 }
-.destination img{
-  width: 100%;
-  height: 500px;
-  margin-top: 40px;
-}
-
-.container p{
-  font-family:"rubik", serif;
-  margin-bottom: 10px;
-}
-
-.container h2 {
-  font-family:"Exo", serif;
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-.container h3 {
-  font-family:"Exo", serif;
-  font-size: 30px;
-  margin-bottom: 20px;
+.line {
+  width: 93.5%;
+  margin: 0 auto;
+  border-top: 0.5px solid #cdc6c6;
+  margin-bottom: 3px;
 }
